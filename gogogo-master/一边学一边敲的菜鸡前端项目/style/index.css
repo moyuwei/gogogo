@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbox{
+    width: 100%;
+    height: 44px;
+    position: fixed;
+    background: rgba(0, 122, 204, 0.8);
+    box-shadow: 2px 2px 4px #c1c6ca;
+    top:0;
+    overflow: hidden;
+
+}
+.navbox nav{
+    width: 80%;
+    height: 44px;
+    position: absolute;
+    /* 定位 */
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /* border: 2px solid red; */
+    /* background: #c1c6ca; */
+
+}
+.navbox nav ul{
+    width: auto;
+    height: 44px;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 44px;
+    /* margin: 10px; */
+    /* border: 1px solid green; */
+}
+.navbox nav ul li{
+    border: none;
+    width: 60px;
+    text-align: center;
+
+}
+.navbox nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: azure;
+}
+
+/* 做一些动画 */
+.navbox nav ul li:hover{
+    animation: changecolor 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changecolor{
+    from{
+        background: #69c0ed;
+        
+    }to{
+        background: #3cd0e4;
+    }
+}
+.navbox nav ul li:hover a{
+    text-shadow: 1px 1px 2px black;
+    
+}
